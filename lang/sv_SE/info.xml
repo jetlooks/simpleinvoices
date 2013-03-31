@@ -4,6 +4,7 @@
 	<name>Svenska</name>
 	<shortname>sv_SE</shortname>
 	<englishname>Swedish</englishname>
+    <direction>LTR</direction>
 	<author>Joakim Nyman</author>
 	<authorEmail>joakim@edgefive.com</authorEmail>
 </langfile>

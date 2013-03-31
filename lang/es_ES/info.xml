@@ -3,6 +3,7 @@
 	<name>Castellano</name>
 	<shortname>es_ES</shortname>
 	<englishname>Spanish</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2004-09-20</creationDate>
 	<author>Esteban MatÃƒÂ­as Vergara, Anton Meixome, Agustin Henze, Facundo Ameal</author>

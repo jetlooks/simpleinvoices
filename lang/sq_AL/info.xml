@@ -3,6 +3,7 @@
 	<name>Shqip</name>
 	<shortname>sq_AL</shortname>
 	<englishname>Albanian</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2004-09-20</creationDate>
 	<author>Gjergj Sheldija</author>

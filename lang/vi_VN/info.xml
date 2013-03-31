@@ -3,6 +3,7 @@
 	<name>Vietnam</name>
 	<shortname>vi_VN</shortname>
 	<englishname>Vietnam</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2011-02-24</creationDate>
 	<author>Phuong Nguyen</author>

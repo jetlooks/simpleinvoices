@@ -3,6 +3,7 @@
 	<name>Latviesu</name>
 	<shortname>lv_LV</shortname>
 	<englishname>Latvian</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2007-12-01</creationDate>
 	<author>Translation by Iveta N. Thetford</author>

@@ -3,6 +3,7 @@
 	<name>Maltese</name>
 	<shortname>mt_MT</shortname>
 	<englishname>MT</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2009-02-21</creationDate>
 	<author>Michel Bugeja</author>

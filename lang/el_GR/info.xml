@@ -3,6 +3,7 @@
 	<name>Greek</name>
 	<shortname>el_GR</shortname>
 	<englishname>Greek</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2008-04-20</creationDate>
 	<author>Panos Milis</author>

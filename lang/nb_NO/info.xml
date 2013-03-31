@@ -3,6 +3,7 @@
 	<name>Norsk</name>
 	<shortname>nb_NO</shortname>
 	<englishname>Norwegian</englishname>
+    <direction>LTR</direction>
 	<version>2.0</version>
 	<creationDate>2004-09-20</creationDate>
 	<author>Jon Kristian Nilsen</author>

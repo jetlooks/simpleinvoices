@@ -3,6 +3,7 @@
 	<name>Slovensky</name>
 	<shortname>sk_SK</shortname>
 	<englishname>Slovak</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2008-01-28</creationDate>
 	<author>Ludo</author>

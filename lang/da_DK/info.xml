@@ -3,6 +3,7 @@
 	<name>Dansk</name>
 	<shortname>da_DK</shortname>
 	<englishname>Danish</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2004-11-10</creationDate>
 	<author>Claus Mølgaard Nielsen, Michael Larsen</author>

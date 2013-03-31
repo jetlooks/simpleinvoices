@@ -3,4 +3,5 @@
 	<name>Türkçe</name>
 	<shortname>tr_TR</shortname>
 	<englishname>Turkish</englishname>
+    <direction>LTR</direction>
 </langfile>

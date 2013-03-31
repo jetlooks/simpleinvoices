@@ -3,6 +3,7 @@
 	<name>Suomi</name>
 	<shortname>fi_FI</shortname>
 	<englishname>Finnish</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2004-09-20</creationDate>
 	<author>Petri Hartoma, Joakim Nyman</author>

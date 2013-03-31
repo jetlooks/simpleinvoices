@@ -3,6 +3,7 @@
 	<name>Cestina</name>
 	<shortname>cs_CZ</shortname>
 	<englishname>Czech</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2004-09-20</creationDate>
 	<author>Roman Dergam</author>

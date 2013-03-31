@@ -3,6 +3,7 @@
 	<name>Schwizerdütsch</name>
 	<shortname>de_CH</shortname>
 	<englishname>Swiss German</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2004-09-20</creationDate>
 	<author>Nicolas Ruflin</author>

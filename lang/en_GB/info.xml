@@ -3,6 +3,7 @@
 	<name>English</name>
 	<shortname>en_GB</shortname>
 	<englishname>UK</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2004-09-20</creationDate>
 	<author>Justin Kelly</author>

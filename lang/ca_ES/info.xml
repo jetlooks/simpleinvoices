@@ -3,6 +3,7 @@
 	<name>Catala</name>
 	<shortname>ca_ES</shortname>
 	<englishname>Catalan</englishname>
+    <direction>LTR</direction>
 	<version>1.0.0</version>
 	<creationDate>2004-09-20</creationDate>
 	<author>Nicolas Ruflin</author>
