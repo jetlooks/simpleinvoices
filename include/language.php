@@ -98,7 +98,38 @@ function getLanguageList() {
 	return $languages;
 }
 
+function getLanguageDirection(){ // Igor
+    $xmlFile = "info.xml";
+    $langPath = "lang/";
+    global $language;
+
+    $lang_direction_default = "LTR";
+
+    $file = 'lang/'.$language.'/info.xml';
+
+    if(file_exists($file)){
+        $xml_obj = simplexml_load_file($file);
+        //No such file in given path
+        if( ! $xml_obj){
+            error_log('The info.xml file is incorrect. Lang directory: '.'lang/'.$language.'. Time: '.date('Y-m-d H:i:s'));
+        }
+        else{
+            if(property_exists($xml_obj, 'direction')){
+                $lang_direction_default = $xml_obj->direction;
+            }
+            else{
+                error_log('The info.xml file doesn\'t contain <direction> tag. Lang directory: '.'lang/'.$language.'. Time: '.date('Y-m-d H:i:s'));
+            }
+        }
+    }
+    else{
+        error_log('The xml.info language file is absent. Requested language: '.$language.'.  Time: '.date('Y-m-d H:i:s'));
+    }
+    return $lang_direction_default;
+}
+
 $LANG = getLanguageArray();
+$LANG_DIRECTION = getLanguageDirection();
 //TODO: if (getenv("HTTP_ACCEPT_LANGUAGE") != available language) AND (config lang != en) ) {
 // then use config lang
 // }

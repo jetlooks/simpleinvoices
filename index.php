@@ -85,6 +85,7 @@ $smarty -> assign("view",$view);
 $smarty -> assign("siUrl",$siUrl);//used for template css
 
 $smarty -> assign("LANG",$LANG);
+$smarty -> assign("LANG_DIRECTION",$LANG_DIRECTION);
 //For Making easy enabled pop-menus (see biller)
 $smarty -> assign("enabled",array($LANG['disabled'],$LANG['enabled']));
 
