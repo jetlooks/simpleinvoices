@@ -236,7 +236,7 @@
 			</td>
 		</tr>
 			
-		<tr>
+		<tr class="si_invoice_preferences">
 			<th>
 				{$LANG.inv_pref}
 			</th>

@@ -3,40 +3,65 @@
 {$smarty.capture.hook_topmenu_start}
 
 	<div class="si_wrap">
-		{$LANG.hello} {$smarty.session.Zend_Auth.email|htmlsafe} | <a href="http://www.simpleinvoices.org/help" target="blank">{$LANG.help}</a>
-		{if $config->authentication->enabled == 1}
-			|
-			{if $smarty.session.Zend_Auth.id == null}
-				<a href="index.php?module=auth&amp;view=login">{$LANG.login}</a>
-			{else}
-				<a href="index.php?module=auth&amp;view=logout">{$LANG.logout}</a>
-			{/if}
-		{/if}
-	</div>
+            {if $LANG_DIRECTION == 'LTR'}
+                {$LANG.hello} {$smarty.session.Zend_Auth.email|htmlsafe} | <a href="http://www.simpleinvoices.org/help" target="blank">{$LANG.help}</a>
+            {/if}
+            {if $config->authentication->enabled == 1}
+                {if $LANG_DIRECTION == 'LTR'}|{/if}
+                {if $smarty.session.Zend_Auth.id == null}
+                    <a href="index.php?module=auth&amp;view=login">{$LANG.login}</a>
+                    {else}
+                    <a href="index.php?module=auth&amp;view=logout">{$LANG.logout}</a>
+                {/if}
+                {if $LANG_DIRECTION == 'RTL'}|{/if}
+            {/if}
+            {if $LANG_DIRECTION == 'RTL'}
+                <a href="http://www.simpleinvoices.org/help" target="blank">{$LANG.help}</a> | {$LANG.hello} {$smarty.session.Zend_Auth.email|htmlsafe}
+            {/if}
+
+    </div>
 {$smarty.capture.hook_topmenu_end}
 </div>
-
-
-
 
 
 <div id="tabmenu" class="flora si_wrap" >
 {$smarty.capture.hook_tabmenu_start}
 
 	<ul>
-{$smarty.capture.hook_tabmenu_main_start}
-		<li><a href="#home"><span>{$LANG.home}</span></a></li>
-		<li><a href="#money"><span>{$LANG.money}</span></a></li>
-		<li><a href="#people"><span>{$LANG.people}</span></a></li>
-		<li><a href="#product"><span>{$LANG.products}</span></a></li>
-{$smarty.capture.hook_tabmenu_main_end}
-		<li id="si_tab_settings"><a href="#setting"><span>{$LANG.settings}</span></a></li>
+{*Direction is RTL*}
+{if $LANG_DIRECTION == 'RTL'}
+        <li id="si_tab_settings"><a href="#setting"><span>{$LANG.settings}</span></a></li>
+    {$smarty.capture.hook_tabmenu_main_start}
+    <li><a href="#home"><span>{$LANG.home}</span></a></li>
+    <li><a href="#money"><span>{$LANG.money}</span></a></li>
+    <li><a href="#people"><span>{$LANG.people}</span></a></li>
+    <li><a href="#product"><span>{$LANG.products}</span></a></li>
+    {$smarty.capture.hook_tabmenu_main_end}
+
+{*Direction is LTR*}
+{else}
+    {$smarty.capture.hook_tabmenu_main_start}
+        <li><a href="#home"><span>{$LANG.home}</span></a></li>
+        <li><a href="#money"><span>{$LANG.money}</span></a></li>
+        <li><a href="#people"><span>{$LANG.people}</span></a></li>
+        <li><a href="#product"><span>{$LANG.products}</span></a></li>
+    {$smarty.capture.hook_tabmenu_main_end}
+        <li id="si_tab_settings"><a href="#setting"><span>{$LANG.settings}</span></a></li>
+
+{/if}
 	</ul>
 
 	<div id="home">
 		<ul class="subnav">
-			<li><a { if $pageActive == "dashboard"} class="active" {/if} href="index.php?module=index&amp;view=index">{$LANG.dashboard}</a></li>
-			<li><a { if $pageActive == "report"} class="active" {/if} href="index.php?module=reports&amp;view=index">{$LANG.all_reports}</a></li>
+        {*Direction is RTL*}
+        {if $LANG_DIRECTION == 'RTL'}
+            <li><a { if $pageActive == "dashboard"} class="active" {/if} href="index.php?module=index&amp;view=index">{$LANG.dashboard}</a></li>
+            <li><a { if $pageActive == "report"} class="active" {/if} href="index.php?module=reports&amp;view=index">{$LANG.all_reports}</a></li>
+        {*Direction is RTL*}
+        {else}
+            <li><a { if $pageActive == "dashboard"} class="active" {/if} href="index.php?module=index&amp;view=index">{$LANG.dashboard}</a></li>
+            <li><a { if $pageActive == "report"} class="active" {/if} href="index.php?module=reports&amp;view=index">{$LANG.all_reports}</a></li>
+        {/if}
 		</ul>
 	</div>
 

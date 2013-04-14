@@ -17,13 +17,30 @@
 	<meta name="robots" content="noindex, nofollow" />
 	<link rel="shortcut icon" href="./images/common/favicon.ico" />
 
+    {if $LANG_DIRECTION == 'RTL'}
+        {literal}
+            <link rel="stylesheet" type="text/css" href="./include/jquery/wysiwyg/rtl/wysiwyg.css" />
+            <link rel="stylesheet" type="text/css" href="./include/jquery/jquery.plugins.rtl.css" title="default" media="screen" />
+        {/literal}
+    {else}
+        {literal}
+            <link rel="stylesheet" type="text/css" href="./include/jquery/wysiwyg/ltr/wysiwyg.css" />
+            <link rel="stylesheet" type="text/css" href="./include/jquery/jquery.plugins.ltr.css" title="default" media="screen" />
+        {/literal}
+    {/if}
+
 {literal}
-	<link rel="stylesheet" type="text/css" href="./include/jquery/wysiwyg/wysiwyg.css" />
-	<link rel="stylesheet" type="text/css" href="./include/jquery/jquery.plugins.css" title="default" media="screen" />
 	<link rel="stylesheet" type="text/css" href="./include/jquery/rte/rte.css" />	
 	<link rel="stylesheet" type="text/css" href="./include/jquery/cluetip/jquery.cluetip.css" />
+{/literal}
 
-	<link rel="stylesheet" type="text/css" href="./templates/default/css/main.css" media="all"/>
+    {if $LANG_DIRECTION eq 'RTL'}
+    {literal}<link rel="stylesheet" type="text/css" href="./templates/default/css/rtl/main.css" media="all"/>{/literal}
+    {else}
+    {literal}<link rel="stylesheet" type="text/css" href="./templates/default/css/ltr/main.css" media="all"/>{/literal}
+    {/if}
+
+{literal}
 	<link rel="stylesheet" type="text/css" href="./templates/default/css/print.css" media="print" />
 <!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="./templates/default/css/main_ie.css" media="all" />
@@ -37,7 +54,7 @@
 	<script type="text/javascript" src="./include/jquery/cluetip/jquery.cluetip.js"></script>
 	<script type="text/javascript" src="./include/jquery/jquery.flexigrid.1.0b3.pack.js"></script>
 	<script type="text/javascript" src="./include/jquery/jquery.plugins.js"></script>
-	<script type="text/javascript" src="./include/jquery/wysiwyg/wysiwyg.modified.packed.js"></script>
+	<script type="text/javascript" src="./include/jquery/wysiwyg/wysiwyg.js"></script>
 	<script type="text/javascript" src="./include/jquery/jquery.livequery.pack.js"></script>
 {/literal}
     {$extension_jquery_files }
@@ -45,7 +62,7 @@
 	{include file='../include/jquery/jquery.conf.js.tpl'}
 {literal}
 
-	<!--<script type="text/javascript" src="./include/jquery/jquery.conf.js.tpl"></script>-->
+	<script type="text/javascript" src="./include/jquery/jquery.conf.js.tpl"></script>
 
 {/literal}
 	{if $config->debug->level == "All"}

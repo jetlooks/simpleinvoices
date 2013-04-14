@@ -253,6 +253,8 @@ $(document).ready(function(){
 		export_invoice($row_number, '{/literal}{$config->export->spreadsheet}{literal}','{/literal}{$config->export->wordprocessor}{literal}');
      });
 
+    if($('iframe').children(0).length > 0) alert("Hello world!");
+
 });
 
 </script>
