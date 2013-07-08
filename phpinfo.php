@@ -1,5 +1,5 @@
 <?php
-
+333
 /*
 * Script: phpinfo.php
 * 	Show the servers PHP settings
